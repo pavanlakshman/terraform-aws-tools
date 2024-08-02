@@ -43,9 +43,9 @@ module "nexus" {
   name = "nexus"
 
   instance_type          = "t3.medium"
-  vpc_security_group_ids = ["sg-0fea5e49e962e81c9"]
+  vpc_security_group_ids = ["sg-05d4e66d0c4303ffa"]
   # convert StringList to list and get first element
-  subnet_id = "subnet-0ea509ad4cba242d7"
+  subnet_id = "subnet-0fabf9db2688766b7"
   ami = data.aws_ami.nexus_ami_info.id
   key_name = aws_key_pair.tools.key_name
   root_block_device = [
